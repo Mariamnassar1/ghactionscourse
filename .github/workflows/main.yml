@@ -12,4 +12,11 @@ jobs:
     steps: 
       - name: Print a welcome message
         run: echo "welcome to our first Actions Workflow!"
+
+      - name: Checkout repository #read the repo files 
+        uses: actions/checkout@v7.0.1
+
+      - name: List repository files 
+        run: ls -la 
+      
         
